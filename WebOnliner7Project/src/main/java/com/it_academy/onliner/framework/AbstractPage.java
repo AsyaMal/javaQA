@@ -44,6 +44,7 @@ public abstract class AbstractPage {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
 
+
     public List<String> getTextsFromWebElements(List<WebElement> webElements, String splitByRegex) {
         return webElements.stream().map(a -> StringUtils.split(a.getText(), splitByRegex)).flatMap(Arrays::stream).filter(StringUtils::isNotEmpty).collect(Collectors.toList());
     }
@@ -51,9 +52,11 @@ public abstract class AbstractPage {
     public List<String> getTextsFromWebElements(List<WebElement> webElements) {
         return getTextsFromWebElements(webElements, StringUtils.EMPTY);
     }
+
     public boolean isElementDisplayed(By by) {
         return this.isExists(by) && this.getFirstVisibleElement(by) != null;
     }
+
     private WebElement getFirstVisibleElement(By locator) {
         List<WebElement> elements = driver.findElements(locator);
         for (WebElement webElement : elements) {
@@ -73,6 +76,7 @@ public abstract class AbstractPage {
             return !driver.findElements(by).isEmpty();
         });
     }
+
     private boolean defineStateWithoutTimeouts(Supplier<Boolean> defineAction) {
         this.removeTimeOuts();
         try {
@@ -81,12 +85,15 @@ public abstract class AbstractPage {
             this.setTimeOutsToDefault();
         }
     }
+
     private void setTimeOutsToDefault() {
         driver.manage().timeouts().implicitlyWait((long) DEFAULT_IMPLICIT_WAIT_TIMEOUT, TimeUnit.SECONDS);
     }
+
     private void removeTimeOuts() {
         driver.manage().timeouts().implicitlyWait(3L, TimeUnit.SECONDS);
     }
+
     public void closeBrowser() {
         try {
             driver.quit();

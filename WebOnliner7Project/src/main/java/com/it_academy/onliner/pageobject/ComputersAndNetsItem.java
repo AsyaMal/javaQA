@@ -6,8 +6,9 @@ import org.openqa.selenium.By;
 import java.util.List;
 
 public class ComputersAndNetsItem extends AbstractPage {
-    // показывает элементы, если кликнуть на "Компьютеры и сети" 206
-    private static final String COMPUTER_AND_SET_ITEMS = "//div[@class='catalog-navigation-list__dropdown-list']";
+    // показывает элементы, если кликнуть на "Компьютеры и сети" 9
+    private static final String COMPUTER_AND_SET_ITEMS =
+            "//*[@class='catalog-navigation-list__category' and @data-id='2']//*[@class='catalog-navigation-list__aside-item']";
     private static final String CATALOG_CLASSIFIER_CATEGORY_XPATH_PATTERN =
             "//*[@class='catalog-navigation-list__aside-title' and contains(text(), '%s')]";
     private static final String ACCESSORIES_ITEMS =
@@ -21,7 +22,7 @@ public class ComputersAndNetsItem extends AbstractPage {
                 .click();
     }
 
-    public ComputersAndNetsItem selectAccessoriesInComputerAndNetItem() {
+    public ComputersAndNetsItem selectAccessoriesInComputersAndNetsItem() {
         selectCategory("Комплектующие");
         return new ComputersAndNetsItem();
     }
