@@ -1,0 +1,12 @@
+com\it_academy\onliner\framework\EdgeDriverCreator.class
+com\it_academy\onliner\pageobject\OnlinerHomePage.class
+com\it_academy\onliner\framework\WebDriverCreator.class
+com\it_academy\onliner\navigation\OnlinerNavigation.class
+com\it_academy\onliner\framework\AbstractPage.class
+com\it_academy\onliner\pageobject\CatalogPage.class
+com\it_academy\onliner\framework\SelenideWebDriverDiscovery.class
+com\it_academy\onliner\framework\RemoteDriverCreator.class
+com\it_academy\onliner\framework\DriverCreatorFactory.class
+com\it_academy\onliner\framework\ChromeDriverCreator.class
+com\it_academy\onliner\pageobject\ComputersAndNetsItem.class
+com\it_academy\onliner\pageobject\OnlinerHeader.class
