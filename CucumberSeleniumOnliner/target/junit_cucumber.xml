@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="19.19">
+    <testcase classname="As an user" name="Certain Onliner Links should contain dropdown menu and subcategories" time="9.554">
+        <system-out><![CDATA[Given the user opens Onliner website........................................passed
+When the user moves the mouse on the Avtobaraholka..........................passed
+Then the Avtobaraholka dropdown menu contains brand names...................passed
+And the Avtobaraholka dropdown menu contains towns..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="As an user" name="Certain Onliner Links should contain dropdown menu and subcategories 2" time="9.186">
+        <system-out><![CDATA[Given the user opens Onliner website........................................passed
+When the user moves the mouse on the Doma and Kvartiry......................passed
+Then the Doma and Kvartiry dropdown menu contains towns and quantity of rooms.passed
+And the Doma and Kvartiry dropdown menu contains price rang.................passed
+]]></system-out>
+    </testcase>
+</testsuite>
