@@ -1,0 +1,4 @@
+com\it_academy\onliner\rest_api\service\SushiVeslaService.class
+com\it_academy\onliner\rest_api\utils\ResponseBodyUtils.class
+com\it_academy\onliner\rest_api\utils\GetRequestUtils.class
+com\it_academy\onliner\rest_api\model\SushiVeslaProduct.class

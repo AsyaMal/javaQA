@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.it_academy.tests.onliner.OnlinerSushiVeslaProductTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.941 s - in com.it_academy.tests.onliner.OnlinerSushiVeslaProductTest
